@@ -36,17 +36,10 @@
 	}
 
 	body {
-		width:1366px;
+		width:100%;
 		margin:auto;
-		padding:55px 0 0 5%;
+		padding:55px 0 0 10vw;
 	}
-
-	@media (min-width:1400px) {
-		body {
-			padding:55px 0 0 200px;
-		}
-	}
-
 	h1 {
 		font-size: 28px;
 		font-weight: bold;
@@ -110,9 +103,7 @@
 	/* Leaderboard Style */
 
 	.leaderboard {
-		width: 400px;
-		margin-right:40px;
-		float:left;
+		width: 80vw;
 	}
 	.leaderboard h3 {
 		width:50%;
@@ -134,8 +125,10 @@
 	/* Game Details Style */
 
 	.game-details {
-		width:620px;
-		float:left;
+		width:80vw;
+	}
+	.game-details table {
+		width:100%;
 	}
 	.game-details td.role-name {
 		width:40%;
@@ -145,6 +138,29 @@
 		padding-right:40px;
 	}
 
+	/* Desktop Optimization */
+
+	@media (min-width:1400px) {
+
+		/* All Pages Style */
+
+		body {
+			padding:55px 0 0 200px;
+		}
+
+		/* Main Scoreboard Style */
+
+		.leaderboard {
+			width: 400px;
+			float:left;
+			margin-right:40px;
+		}
+		.game-details {
+			width:620px;
+			float:left;
+		}
+
+	}
 
 
 </style>
